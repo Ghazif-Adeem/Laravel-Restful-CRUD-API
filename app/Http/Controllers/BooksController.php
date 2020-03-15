@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class BooksController extends Controller
 {
     public function index() {
+        // Fetches All Records from DB
         return response()->json(Book::all());
     }
 
